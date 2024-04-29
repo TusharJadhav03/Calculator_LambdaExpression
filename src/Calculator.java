@@ -17,7 +17,7 @@ public class Calculator {
 
         while(true){
             System.out.println("***---Welcome to Calculator---***");
-            System.out.println("\n 1.Addition \n 2.Substraction \n 3.Multiplication \n 4.Division");
+            System.out.println("\n 1.Addition \n 2.Substraction \n 3.Multiplication \n 4.Division \n 0.Exit");
             switch (sc.nextInt()){
                 case 1 :
                     MathOper add = (a,b)-> x + y ;
@@ -27,6 +27,15 @@ public class Calculator {
                 case 2 :
                     MathOper sub = (a,b)-> x - y;
                     System.out.println("Substraction : "+sub.calculate(x,y));
+                    break;
+
+                case 3 :
+                    MathOper mul = (a,b)-> x * y;
+                    System.out.println("Multiplication : "+mul.calculate(x,y));
+                    break;
+
+                case 0 :
+                    System.exit(0);
                     break;
             }
         }
