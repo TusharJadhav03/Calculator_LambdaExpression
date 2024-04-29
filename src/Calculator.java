@@ -22,6 +22,12 @@ public class Calculator {
                 case 1 :
                     MathOper add = (a,b)-> x + y ;
                     System.out.println("Addition : "+add.calculate(x,y));
+                    break;
+
+                case 2 :
+                    MathOper sub = (a,b)-> x - y;
+                    System.out.println("Substraction : "+sub.calculate(x,y));
+                    break;
             }
         }
 
