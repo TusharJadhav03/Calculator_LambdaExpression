@@ -34,6 +34,16 @@ public class Calculator {
                     System.out.println("Multiplication : "+mul.calculate(x,y));
                     break;
 
+                case 4 :
+                    try {
+                        MathOper div = (a, b) -> x / y;
+                        System.out.println("Division : " +div.calculate(x, y));
+                        }
+                    catch (Exception e){
+                        System.out.println("Cannot divide with 0"+e);
+                    }
+                    break;
+
                 case 0 :
                     System.exit(0);
                     break;
